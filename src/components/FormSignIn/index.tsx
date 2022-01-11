@@ -9,12 +9,12 @@ const FormSignIn = () => (
     <Textfield type="email" />
     <Textfield type="password" />
     <Button>Sign in</Button>
-    <p>
+    <S.TextLink>
       Dont have an account?{' '}
       <Link href="sign-up">
         <a>Sign up</a>
       </Link>
-    </p>
+    </S.TextLink>
   </S.Wrapper>
 )
 
