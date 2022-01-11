@@ -12,6 +12,7 @@ export const Input = styled.input`
   border-radius: 0.5rem;
   flex: 1;
   transition: filter 0.3s;
+  font-size: 1.125rem;
 
   &:focus {
     outline: 0;
