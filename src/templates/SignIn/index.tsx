@@ -1,14 +1,12 @@
+import FormBase from '../../components/FormBase'
 import FormSignIn from '../../components/FormSignIn'
 import * as S from './styles'
 
 const SignIn = () => (
   <S.Wrapper>
-    <S.LeftSide>
-      <S.Title>Prensa</S.Title>
-    </S.LeftSide>
-    <S.RightSide>
+    <FormBase>
       <FormSignIn />
-    </S.RightSide>
+    </FormBase>
   </S.Wrapper>
 )
 
