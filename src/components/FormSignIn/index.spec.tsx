@@ -1,4 +1,3 @@
-import '@testing-library/jest-dom'
 import FormSignIn from '.'
 import { render, screen } from '@testing-library/react'
 
