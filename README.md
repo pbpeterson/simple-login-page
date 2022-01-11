@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Este é um repositório de uma tela de login simples usando NextJS e suas melhores práticas
+
+#### Você tem a opção de visualizar o projeto no navegador. 
+#### Acesse: https://prensa-login.vercel.app/
+
+___
+
+
+  Primeiramente clone o repositório em um diretório
+
 
 ```bash
-npm run dev
-# or
-yarn dev
+
+git clone https://github.com/pbpeterson/simple-login-page
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Em seguida entre na pasta do projeto
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+cd simbiose-test
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+Depois disso instale as dependencias:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
 
-## Deploy on Vercel
+npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# or
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+yarn install
+
+```
+
+Agora é só rodar o projeto com o comando
+
+```bash
+
+npm run dev
+
+# or
+
+yarn dev
+
+```
+  
+  Abrirá um servidor local na porta 3000 (se ela não estiver sendo utilizada).
+  E então é só abrir o seu browser e acessar  http://localhost:3000/
+
+
+ # (Opcional) Execute os testes
+ Desenvolver com testes unitários é a melhor forma de assegurar que os seus componentes estão fazendo o que foi proposto.
+Para rodar os testes após instalar as dependencias, execute: 
+
+```bash
+
+npm run test
+
+# or
+
+yarn test
+
+```
+
+![imagem da cobertura dos tests](./imgs/tests.png)
+
+Ao executar os testes você verá uma cobertura de 100% 
+
+ # (Opcional) Visualize os componentes com o storybook
+Uma forma de ter componentes organizados e testar as funcionalidades no browser é usando uma ferramenta de construção de componentes isolados como o storybook, isso facilita o desenvolvedor a desenvolver componentes que sejam mais reutilizados, fáceis de dar manutenção e testar visualmente.
+
+Para executar o storybook, execute o comando:
+
+```bash
+
+npm run storybook
+
+```
+
+Abrirá um servidor do storybook na porta 6006, e então é só abrir o browser e acessar  http://localhost:6006/
