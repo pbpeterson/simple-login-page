@@ -22,6 +22,17 @@ export const WrapperInputsSignUp = styled.div`
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
+  @media (max-width: 30rem) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'firstname'
+      'lastname'
+      'email'
+      'password'
+      'confirm_password';
+  }
 `
 
 export const FirstNameWrapper = styled.div`
