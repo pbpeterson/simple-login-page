@@ -6,4 +6,8 @@ export default {
   component: FormBase,
 } as Meta
 
-export const Default: Story = () => <FormBase />
+export const Default: Story = () => (
+  <FormBase>
+    <p>Anychild</p>
+  </FormBase>
+)
