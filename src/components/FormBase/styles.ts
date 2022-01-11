@@ -2,7 +2,12 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   display: flex;
-  height: 100vh;
+  padding-top: 2rem;
+
+  @media (min-width: 30rem) {
+    height: 100vh;
+    padding-top: 0;
+  }
 `
 
 export const LeftSide = styled.div`

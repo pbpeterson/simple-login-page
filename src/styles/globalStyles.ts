@@ -11,6 +11,12 @@ const GlobalStyles = createGlobalStyle`
     color: #18345E;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
+
+  body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
 `
 
 export default GlobalStyles
