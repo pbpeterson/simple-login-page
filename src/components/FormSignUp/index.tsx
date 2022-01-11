@@ -28,7 +28,7 @@ const FormSignUp = () => (
         <Textfield type="password" />
       </S.PasswordWrapper>
       <S.ConfirmPassworWrapper>
-        <Textfield type="password" aria-label="Confirme sua senh" />
+        <Textfield type="password" aria-label="Confirme sua senha" />
       </S.ConfirmPassworWrapper>
     </S.WrapperInputsSignUp>
     <Button>Sign up</Button>
