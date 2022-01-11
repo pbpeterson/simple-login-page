@@ -7,7 +7,12 @@ export type TextfieldProps = {
   onInputChange?: (text: string) => void
 } & InputHTMLAttributes<HTMLInputElement>
 
-const Textfield = ({ type, placeholder, onInputChange }: TextfieldProps) => {
+const Textfield = ({
+  type,
+  placeholder,
+  onInputChange,
+  ...rest
+}: TextfieldProps) => {
   const [inputValue, setInputValue] = useState<string>('')
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,6 +41,7 @@ const Textfield = ({ type, placeholder, onInputChange }: TextfieldProps) => {
             ? 'Digite sua senha'
             : 'Digite seu texto'
         }
+        {...rest}
       />
     </S.InputWrapper>
   )
