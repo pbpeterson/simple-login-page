@@ -22,7 +22,7 @@ Em seguida entre na pasta do projeto
 
 ```bash
 
-cd simbiose-test
+cd simple-login-page
 
 ```
 
